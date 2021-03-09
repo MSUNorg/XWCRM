@@ -1,0 +1,8 @@
+name,value,comment
+mt_login,3000,
+mt_password,Ilove125ED+,
+mtserver_ip,36.102.229.227,
+mtserver_port,1997,
+mt_timeout,5,
+MT默认组,bonus\std\100L0r0c,用户注册时所创建的MT账户所在的默认组
+汇率系数,1.05,

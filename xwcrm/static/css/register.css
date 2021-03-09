@@ -1,0 +1,22 @@
+form {
+  width: 500px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+@media (min-height: 700px) {
+  form {
+    padding-top: 60px;
+  }
+}
+form h1 {
+  text-align: center;
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+form h1 sup {
+  font-size: 50%;
+  top: -1em;
+}
+form button[type=submit] {
+  margin-left: 10px;
+}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}登录XWCRM系统{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link href="{{ static_url('css/register.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <form method="POST">
+    <h2>
+		<img src="{{ static_url('img/hyrobot200.png') }}" height="40" width="40" />
+		XWCRM系统<sup></sup>
+	</h2>
+    <div class="form-group {{ 'has-error' if ulogin_error }}">
+      <label class="control-label" for="email">用户名</label>
+      <input type="ulogin" class="form-control" name="ulogin" id="ulogin" value="{{ ulogin }}" placeholder="请输入 用户名">
+      {% if ulogin_error %}<p class="text-danger">{{ ulogin_error }}</p>{% endif %}
+    </div>
+    <div class="form-group {{ 'has-error' if password_error }}">
+      <label for="password">密码</label>
+      <input type="password" class="form-control" name="password" id="password" placeholder="请输入 密码">
+      {% if password_error %}<p class="text-danger">{{ password_error }}</p>{% endif %}
+    </div>
+    <div class="form-group {{ 'has-error' if checkcode_error }}">
+      <label for="checkcode">校验码</label>
+      <div>
+      <input style="float:left;width: 80%;" type="checkcode" class="form-control" name="checkcode" id="checkcode" placeholder="请输入 校验码" >
+      <img style="float:right;width: 20%;" src="/check_code" onclick='ChangeCode();' id='imgCode'>
+      </div>
+      {% if checkcode_error %}<p class="text-danger">{{ checkcode_error }}</p>{% endif %}
+    </div>
+    <div class="form-group {{ 'has-error' if isadmin_error }}">
+        <label for="checkcode">&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <p style="text-align: center;">
+        <label class="checkbox-inline">
+            <input type="checkbox"  name="isadmin" value="0"  />管理员登录</p>
+        </label>
+    </div>
+
+    <div class="text-right" style="text-align: center;">
+      <p><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+      <button type="submit" class="btn btn-default" onclick="document.forms[0].action='/login'+location.search">登录</button>
+      <button type="button" class="btn btn-default" onclick="location.href='/register'">新用户注册</button>
+    </div>
+
+    <script type="text/javascript">
+	    function ChangeCode() {
+            var code = document.getElementById('imgCode');
+            code.src += '?';
+        }
+    </script>
+  </form>
+</div>
+{{ utils.submit_loading() }}
+{% endblock %}

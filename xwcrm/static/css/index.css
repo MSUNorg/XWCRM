@@ -1,0 +1,23 @@
+.login {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+}
+form {
+  width: 200px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+form h1 {
+  text-align: center;
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+form h1 sup {
+  font-size: 50%;
+  top: -1em;
+}
+form div.text-right {
+  margin-top: 30px;
+}

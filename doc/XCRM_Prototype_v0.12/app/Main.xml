@@ -1,0 +1,351 @@
+﻿<project version="2.9" name="FMBonusFXCRM_Prototype_v0.12" ID="5ECB58EF-28B7-48A3-AB2F-E314ECBC5435">
+  <params>
+    <pageParam version="5.2" minAllowVersion="5.2"/>
+    <projectParam version="2.9" minAllowVersion="2.9" platform="MtWeb" pageSize="(1920,1080)" backgroundColor="4294967295" fontSize="0" fontFamily="" projectType="ptPersonalProject" isShowTitleIndex="False"/>
+    <previewParam version="1.0"/>
+    <colorParam version="1.0"/>
+  </params>
+  <pages>
+    <page name="内部用户" ID="0AF39EE1-11B4-47FF-BB67-4B5EC30DAA5A" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+      <page name="客服部门" ID="FEB2BF94-9051-4DE7-979D-5D5D77022B7D" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+        <page name="客服专员" ID="F9D6889B-AF90-4FDA-A864-9A5266B6CD2F" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+          <page name="工作台" ID="99ADE97F-E39B-425C-9FD1-8F8E699D1603" expanded="True" code="2VxvhUrqec" thumbCode="2VxvhUrqec" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="查找客户" ID="E534B6DA-DB19-44EC-8107-3BB0E2E7C81C" expanded="True" code="JW4nAxcyQB" thumbCode="JW4nAxcyQB" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="查看客户基本信息" ID="BB7E9DA4-2892-4DF8-A3F9-F14B36E2C25D" expanded="True" code="JGuXbCddU1" thumbCode="TJth6YkW2w" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客服新建交易账户" ID="9A3C344C-5BC1-4510-BDEC-F94629596F11" expanded="True" code="GnwOqirADi" thumbCode="Iq2DnoSRIt" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客服修改交易账户" ID="BE3811ED-F30F-497B-9799-0EED60668FAB" expanded="True" code="8qx3tJY3mS" thumbCode="ZIumBKti57" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+        <page name="客服主管" ID="3EFBA6A3-A1A5-4069-B124-2175A8C457FA" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+          <page name="工作台" ID="1CF448BE-C18C-4842-A0FB-5288FE6EEAF6" expanded="False" code="8kb34Bm2e9" thumbCode="8kb34Bm2e9" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="查找客户xxxxxxxxxxxxxto be absoleted" ID="529238E8-1E30-4C01-A4B9-300E06FF6013" expanded="True" code="3EmIsu1xyE" thumbCode="3EmIsu1xyE" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="修改客户基本信息" ID="0D743F95-F8FD-4E52-A719-56E0CE9FE3E9" expanded="True" code="Xw6bAwlyZV" thumbCode="Xw6bAwlyZV" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="审批客服专员新建交易账户(例子)" ID="3A824FD1-9679-4CEA-805B-7748C59AA8D1" expanded="False" code="fTD5RkZOfR" thumbCode="fTD5RkZOfR" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="审批客服专员修改的交易账户(例子)" ID="C3552D2A-D81C-4AAB-9FAE-EF4C580BE4F7" expanded="True" code="4uU3Wu8FOW" thumbCode="4uU3Wu8FOW" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+      </page>
+      <page name="代理部门" ID="6664B989-7E90-479B-9F24-0288963AD8C1" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+        <page name="代理专员" ID="8EF17849-99EA-4600-A229-EDA7D5F7DA9D" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+          <page name="代理专员主页xxxxxxxxxxxxxx(to be absoleted)" ID="19CC514F-97E8-4C25-8223-C74B7F18E5AC" expanded="False" code="eJkSPxArKj" thumbCode="AMSJZpdLK6" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="新建代理商" ID="66D2A618-72D0-4C1A-A541-29124A556948" expanded="True" code="xr9jrKBxvs" thumbCode="xr9jrKBxvs" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="修改代理商" ID="BEB2C852-7B4A-4F3C-B393-184D21246833" expanded="True" code="4LcPhU4PJT" thumbCode="4LcPhU4PJT" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="修改客户代理" ID="B0EBB6BC-7265-41B6-AD76-09086057F9A6" expanded="True" code="FK3yOEk597" thumbCode="FK3yOEk597" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="修改交易账号分组" ID="B34A3EB4-0BBC-4342-A5F7-5D5F9E9233BE" expanded="True" code="Q5cnWgOCcF" thumbCode="Q5cnWgOCcF" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="查找代理商xxxxxxxxxxxx(to be absoleted)" ID="A4CCFA8B-FBF4-4950-BDAD-F9A7D51C5F2E" expanded="True" code="p5IiRnDO8V" thumbCode="HsbpPw6flm" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="工作台" ID="A039C359-D862-4FB0-BABB-A55869B83ACA" expanded="True" code="i9fjlmdXvS" thumbCode="i9fjlmdXvS" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+        <page name="代理主管" ID="AD926B5B-B445-4637-A7EE-69E4FE985433" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+          <page name="查找代理商xxxxxxxxxxxxxxxxx(to be absoleted)" ID="39F8671F-A8DF-4123-A399-5EB5D6B1E1EA" expanded="True" code="IGdqEgm78x" thumbCode="NhJZVO8VRt" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="审批代理专员新建的代理商(示例)" ID="8B98456F-850F-4305-B63B-7A068AB902A7" expanded="True" code="QjbVkdJZyP" thumbCode="QjbVkdJZyP" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="审批代理专员修改的代理商(示例)" ID="A66D0F83-298C-4AE9-92C5-2EF29E9B5D8D" expanded="True" code="1wxUfxLpzq" thumbCode="1wxUfxLpzq" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="审批代理专员修改的客户代理(示例)" ID="8AEFFB75-3E7F-49A4-873E-AE0C91E05B4F" expanded="True" code="LvEDk9Wa3I" thumbCode="LvEDk9Wa3I" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="审批代理专员修改的交易账号分组(示例)" ID="92E55B56-CD01-47FC-AAE1-10E4C5F92E55" expanded="True" code="CODK6NzBGx" thumbCode="CODK6NzBGx" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="工作台" ID="07468C0A-6BAB-4DD1-93B9-12FB57AC1F26" expanded="True" code="blyUtROj2V" thumbCode="KEpCeQOzPr" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+      </page>
+    </page>
+    <page name="外部用户" ID="5CCFC868-3685-48EE-AA88-AF983A5991E9" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+      <page name="代理商" ID="9C91D8B5-7F48-4DD2-A1B8-D915A60445C6" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+        <page name="代理商查看名下客户的交易及佣金记录(佣金日结报表)" ID="BB2393F4-E63F-4BC1-B038-3E62D188F9AF" expanded="True" code="l3hKQXKgIb" thumbCode="l3hKQXKgIb" status="psWhite" isfolder="False" isshownode="True">
+          <images>
+            <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+          </images>
+        </page>
+        <page name="代理商主页面" ID="ABF91C73-81D2-46C4-A5CD-6AEE5FD2252A" expanded="True" code="HTBSRJudXh" thumbCode="HTBSRJudXh" status="psWhite" isfolder="False" isshownode="True">
+          <images>
+            <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            <image key="99F3306433F452A04737307858F73970.svg"/>
+          </images>
+        </page>
+        <page name="搜索客户" ID="F21051D4-9721-4FD8-910D-7B96DF63B0A1" expanded="True" code="5oHm5Ynr64" thumbCode="5oHm5Ynr64" status="psWhite" isfolder="False" isshownode="True">
+          <images>
+            <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+          </images>
+        </page>
+        <page name="代理商升级名下客户" ID="FBB0A8D5-C739-4D71-B080-50573982515D" expanded="True" code="vaU7QOVnaL" thumbCode="vaU7QOVnaL" status="psWhite" isfolder="False" isshownode="True">
+          <images>
+            <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+          </images>
+        </page>
+        <page name="代理商修改客户交易佣金" ID="E59E53B1-6E22-479A-861E-08C9A9B81710" expanded="True" code="ztLWSnrz1U" thumbCode="ztLWSnrz1U" status="psWhite" isfolder="False" isshownode="True">
+          <images>
+            <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+          </images>
+        </page>
+        <page name="代理商修改名下代理返佣" ID="65C65711-5CAB-48BC-89C9-BB8AF7C2853A" expanded="True" code="FWMHfHVtQ6" thumbCode="FWMHfHVtQ6" status="psWhite" isfolder="False" isshownode="True">
+          <images>
+            <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+          </images>
+        </page>
+        <page name="代理商查看客户财务操作历史" ID="B6B9A26E-C35D-49DF-B89D-352A2DCEB569" expanded="True" code="EuhkkYsuts" thumbCode="EuhkkYsuts" status="psWhite" isfolder="False" isshownode="True">
+          <images>
+            <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+          </images>
+        </page>
+        <page name="我的网络" ID="5D5E3423-540B-42EA-9C98-F4FA545BA222" expanded="True" code="i5EloSL69o" thumbCode="i5EloSL69o" status="psWhite" isfolder="False" isshownode="True">
+          <images>
+            <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+          </images>
+        </page>
+      </page>
+      <page name="直客" ID="1BFC8DC8-1293-4FF8-96A5-A1D26EBB04DD" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+        <page name="客户交易账户管理" ID="37FEF779-60E7-440B-90A8-57888F06B988" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+          <page name="客户交易账户总览" ID="0FAC80FD-3296-45A5-B43F-335917227E6D" expanded="True" code="YmdQbukZmC" thumbCode="YmdQbukZmC" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客户查看交易记录" ID="620DEAAD-FF14-4CB0-9853-59317365DB79" expanded="True" code="pnFlHO8ICn" thumbCode="pnFlHO8ICn" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客户新建交易账户" ID="F1218F97-512C-4750-8CED-0B8817A64141" expanded="True" code="DH13hQKaDq" thumbCode="DH13hQKaDq" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客户修改交易账户" ID="2E03ECEA-733D-4298-8A3C-74168B36BC19" expanded="True" code="EEUuW6GIg3" thumbCode="EEUuW6GIg3" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客户修改交易账号密码" ID="8196F9D0-1C8A-406F-85B7-75941F685413" expanded="True" code="5eNKUy7GY9" thumbCode="5eNKUy7GY9" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+        <page name="客户财务" ID="D370EA66-BED1-4463-9047-020963FDBCA0" expanded="False" status="psGreen" isfolder="True" isshownode="True">
+          <page name="客户入金存款" ID="A4BD32C6-4F6A-405E-931D-76B67923933D" expanded="True" code="IogBLAJ4wi" thumbCode="IogBLAJ4wi" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客户出金取款" ID="638FDBD0-E641-491E-9B25-9593011C8958" expanded="True" code="GVFn2QioqR" thumbCode="GVFn2QioqR" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客户交易账号内转" ID="4613A304-E985-48E5-8849-A5E56A67785F" expanded="True" code="dwXb1Gbd8I" thumbCode="dwXb1Gbd8I" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客户财务操作历史" ID="D4BF7757-2980-45EE-ADFF-0DB48D99F1A1" expanded="True" code="eX6iVuuOdO" thumbCode="eX6iVuuOdO" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+        <page name="我的概况" ID="CBF92993-6134-4126-B9EF-6F97A1EA8AB0" expanded="False" status="psGreen" isfolder="True" isshownode="True">
+          <page name="客户信息" ID="7E0C5F16-E86E-46F0-8209-07408FEF183D" expanded="True" code="7OdpLQWOyW" thumbCode="7OdpLQWOyW" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="修改个人信息xxxxxxxxxxxx(to be absoleted)" ID="3ADA658A-1CF4-4CEB-80C2-A5FFFE5D80D3" expanded="True" code="h9TACDdKPr" thumbCode="hFow3sU5f4" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="上传文件(客户身份验证页面)" ID="E1C56EC6-F761-4711-B4E6-445E52B920E4" expanded="True" code="JsESwjge32" thumbCode="JsESwjge32" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="客户修改客户专区密码" ID="BEBE9037-9095-4CB5-B8E0-22143ED2ADAB" expanded="False" code="mFKKKP9KLN" thumbCode="mFKKKP9KLN" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="上传文件(新客户激活页面)xxxxxxx(to be absoleted)" ID="5973AFFF-764E-4E2E-8268-9605F175DD87" expanded="True" code="KjtcDn9jn2" thumbCode="KjtcDn9jn2" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+        <page name="信息" ID="30DDCDBB-4239-4746-8410-217E99EF976F" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+          <page name="MT5下载" ID="B7710CA8-BB98-4A60-B6E9-63A16729475B" expanded="True" code="5xd4h1Q1Wf" thumbCode="5xd4h1Q1Wf" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+        <page name="客户注册登录" ID="BF314E93-10A9-461D-8369-A3E6BB6B2A95" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+          <page name="客户登录首页" ID="02C55384-A904-481F-B838-4124B095DCBD" expanded="True" code="XiiCuIPtYs" thumbCode="XiiCuIPtYs" status="psWhite" isfolder="False" isshownode="True"/>
+          <page name="客户主页面" ID="2C1A4E9E-B6B9-4A27-A546-750BE03ABC7D" expanded="True" code="tEGzqKTdSd" thumbCode="tEGzqKTdSd" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+              <image key="99F3306433F452A04737307858F73970.svg"/>
+            </images>
+          </page>
+          <page name="新客户注册提交页面" ID="661DB556-6678-4C8E-B97B-47754430ED87" expanded="True" code="8FyTpuJDXG" thumbCode="8FyTpuJDXG" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="新客户注册验证页面" ID="C8ED5FD2-6338-4591-9778-CF9244959A8E" expanded="True" code="32cghovyA7" thumbCode="32cghovyA7" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+          <page name="新客户欢迎页面" ID="B98B11A9-86A3-493F-85F3-D46B66EBB44E" expanded="True" code="C8cPXJkFV6" thumbCode="C8cPXJkFV6" status="psWhite" isfolder="False" isshownode="True">
+            <images>
+              <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+            </images>
+          </page>
+        </page>
+      </page>
+    </page>
+    <page name="审批页面" ID="0C38D194-904A-43D6-9CDE-7F450843591F" expanded="True" status="psGreen" isfolder="True" isshownode="True">
+      <page name="审批通用页面1" ID="E4B67E42-70BF-4470-8F37-E448AD907D28" expanded="True" code="NP7pTPWnNO" thumbCode="NP7pTPWnNO" status="psWhite" isfolder="False" isshownode="True">
+        <images>
+          <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+        </images>
+      </page>
+      <page name="审批通用页面2" ID="9F404E27-6D1D-4957-90D9-805156C17E8B" expanded="True" code="DyvBANG7Cq" thumbCode="DyvBANG7Cq" status="psWhite" isfolder="False" isshownode="True">
+        <images>
+          <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+        </images>
+      </page>
+    </page>
+  </pages>
+  <trash>
+    <page name="新客户注册页面" ID="7C508BCF-F8E1-4BF4-BEB4-8A8C243F4F02" expanded="True" code="Oh2n1qzegg" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="页面" ID="18B31980-90AF-407A-9225-C581D6D113C3" expanded="False" code="BXHqCOaBwg" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="客户信息" ID="34342F5B-180D-4E87-9FDF-679C0AABE470" expanded="True" code="wfEfioM5Ay" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="客服专员" ID="891D8B25-9B38-4207-AE64-467A879040C7" expanded="True" code="9TTY8aFYog" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="客服新建交易账户" ID="C3DB6181-54B1-4C0E-A275-FAAB9B6B2C49" expanded="True" code="RGbbFCH8rX" thumbCode="FeXzh1Xl2j" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+      </images>
+    </page>
+    <page name="搜索客户" ID="192F8E38-16B2-4F9C-AF70-EC570C6D659A" expanded="True" code="sj3uTEUdnc" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="客服" ID="35FE50F3-F669-453B-8943-D4CE29CCC288" expanded="False" code="iqNWwza9wF" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="代理专员" ID="9624283A-B487-412E-BE63-69AF5FD1FFAF" expanded="False" code="yYGzIYNP3s" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="代理商页面" ID="B0B2FC08-6426-47F1-94EF-18C436C31B9E" expanded="False" code="UlUfgMAxgW" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="客户账户管理" ID="3BC32391-4BAA-4305-9276-CB0F1082FF48" expanded="False" code="bBp76glawc" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="客户财务" ID="BE5809C8-43C6-4356-AA47-DB5C100FEF7E" expanded="False" code="B8pXO371iK" thumbCode="" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="客户专区账号管理" ID="CBAC973E-C293-4F4F-A2EF-32CBA35182BF" expanded="False" code="voHQtARW6f" thumbCode="" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="审批通用页面0" ID="D2F6F272-F1A2-440D-90FC-8AEC9A987A7C" expanded="True" code="BgkE1v19MF" thumbCode="wejDGgIysH" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+      </images>
+    </page>
+    <page name="代理部门" ID="D5ADBBF0-A87D-4B40-8DF4-1258E1A87A51" expanded="True" code="4MzZvbTG1J" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="页面" ID="44BF5586-79F1-4446-A039-4DAF85CECA68" expanded="False" code="5L1WQZ43Ct" thumbCode="" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True"/>
+    <page name="修改代理商" ID="31FCA6BE-F1F7-482A-9677-31F2FC318401" expanded="True" code="tbMoscVDDV" thumbCode="V6G4RvD8Bt" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+      </images>
+    </page>
+    <page name="审批代理专员修改的代理商" ID="29FCFF9D-6EC0-412D-A778-A32C06DBE210" expanded="False" code="F6aq1RUYpF" thumbCode="XLy4VxS5E8" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+      </images>
+    </page>
+    <page name="客户信息1" ID="FB0FEF82-76D5-4831-A40C-0034E7EDDFB7" expanded="True" code="1zTKG7ykHd" thumbCode="YTzGIvTga4" isLastOpen="True" status="psWhite" isfolder="False" isshownode="True">
+      <images>
+        <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+      </images>
+    </page>
+  </trash>
+  <deletes/>
+  <masters/>
+  <images>
+    <image key="76118A001D7B98003E1AE08ACA6CEB2B.svg"/>
+    <image key="99F3306433F452A04737307858F73970.svg"/>
+  </images>
+</project>

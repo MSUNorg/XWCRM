@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}注册成功-XWCRM系统{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link href="{{ static_url('css/register.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h2>
+		<img src="{{ static_url('img/hyrobot200.png') }}" height="40" width="40" />
+		XWCRM系统 － 账务后台<sup></sup>
+	</h2>
+    <div>
+        <p>欢迎您成功注册</p>
+        <p>您已经成功注册了XWCRM系统的账号！</p>
+        <p>请先在账务系统进行充值，方可使用XWCRM系统。</p>
+        <p>系统后台处理您的账户设置需要大约5分钟，请您耐心等待5分钟后再尝试在客户端登录。</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-right" style="text-align: center;">
+      <p><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+      <button type="button" class="btn btn-default" onclick="location.href='/profile'">完善我的个人资料</button>
+      <button type="button" class="btn btn-default" onclick="location.href='/recharge'">立即充值</button>
+    </div>
+</div>
+{{ utils.submit_loading() }}
+{% endblock %}

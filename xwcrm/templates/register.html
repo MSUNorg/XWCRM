@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}注册XWCRM系统{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link href="{{ static_url('css/register.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <form method="POST">
+    <h2>
+		<img src="{{ static_url('img/hyrobot200.png') }}" height="40" width="40" />
+		XWCRM系统<sup>hyrobot</sup>
+	</h2>
+	<div class="form-group" >
+		<hr />
+		<b>注册须知</b><br />
+		用户注册XWCRM系统，需要首先<a href="http://www.honghaigy.com/portal/business/hyrobot/fxaccount">注册一个我公司认可的外汇交易账号。</a><br />
+		请慎重填写下列<b>每项内容</b>，注册后如需修改<b>只能</b>联系客服处理！<br />
+		推荐人账号请咨询您的客服人员或销售商。<br />
+		注册用户名只能含有小写字母，数字，下划线和英文句点，密码至少为8位。 <br />
+		在本页面注册的用户名和密码也用于登录客户端，请妥善保管。<br />
+		<hr />
+	</div>
+    <div class="form-group {{ 'has-error' if username_error }}">
+      <label class="control-label" for="username">用户名称</label>
+      <input type="username" class="form-control" name="username" id="username" value="{{ username }}" placeholder="请输入 符合规定的用户名称">
+      {% if username_error %}<p class="text-danger">{{ username_error }}</p>{% endif %}
+    </div>
+    <div class="form-group {{ 'has-error' if email_error }}">
+      <label class="control-label" for="email">电子邮箱</label>
+      <input type="email" class="form-control" name="email" id="email" value="{{ email }}" placeholder="请输入 电子邮箱">
+      {% if email_error %}<p class="text-danger">{{ email_error }}</p>{% endif %}
+    </div>
+    <div class="form-group {{ 'has-error' if email_confirm_error }}">
+      <label class="control-label" for="email_confirm">电子邮箱确认</label>
+      <input type="email_confirm" class="form-control" name="email_confirm" id="email_confirm" value="{{ email_confirm }}" placeholder="请输入 电子邮箱">
+      {% if email_confirm_error %}<p class="text-danger">{{ email_confirm_error }}</p>{% endif %}
+    </div>
+    <div class="form-group {{ 'has-error' if password_error }}">
+      <label for="password">用户密码</label>
+      <input type="password" class="form-control" name="password" id="password" placeholder="请输入8位以上 密码">
+      {% if password_error %}<p class="text-danger">{{ password_error }}</p>{% endif %}
+    </div>
+    <div class="form-group {{ 'has-error' if password_confirm_error }}">
+      <label for="password_confirm">用户密码确认</label>
+      <input type="password" class="form-control" name="password_confirm" id="password_confirm" placeholder="请输入8位以上 密码">
+      {% if password_confirm_error %}<p class="text-danger">{{ password_confirm_error }}</p>{% endif %}
+    </div>
+
+    <div class="form-group {{ 'has-error' if mobile_error }}">
+      <label class="control-label" for="mobile">手机号</label>
+      <input type="mobile" class="form-control" name="mobile" id="mobile" value="{{ mobile }}" placeholder="请输入 手机号">
+      {% if mobile_error %}<p class="text-danger">{{ mobile_error }}</p>{% endif %}
+    </div>
+    <div class="form-group {{ 'has-error' if agree_error }}">
+        <label for="checkcode">&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <p ><input type="checkbox" id="agree" name="agree" value="我已阅读并且同意"  />我已阅读并且同意<a href="{{ static_url('html/license.html') }}" target="_blank">《许可协议》</a></p>
+    </div>
+    <div class="text-right" style="text-align: center;">
+      <p><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+      <!--<button type="submit" class="btn btn-default" onclick="document.forms[0].action='/login'+location.search">登录</button>-->
+      <button type="submit" class="btn btn-default" onclick="document.forms[0].action='/register'+location.search">注册</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  $(document).on('submit', 'form', function() {
+        var agree = $("#agree").is(':checked');
+        var username =$("#username").val();
+        if (username.length<3) {
+            alert("用户名太短");
+            return;
+        }
+        if (agree) {
+            $("button[type=submit]").button('loading');
+        }else{
+            alert("请阅读并同意《许可协议》");
+            return;
+        }
+  })
+</script>
+{% endblock %}

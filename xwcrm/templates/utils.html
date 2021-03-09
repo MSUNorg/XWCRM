@@ -1,0 +1,170 @@
+{% macro header(current_user=True,is_admin=False) %}
+<header>
+  <div class="container">
+    <h2 class="text-center">
+		<img src="{{ ('/static/img/hyrobot200.png') }}" height="40" width="40" />
+        {% if is_admin %}
+        XWCRM系统 － 管理员后台
+        {% else %}
+        XWCRM系统 － 账务后台
+        {% endif %}
+	</h2>
+    <div class="buttons">
+      {% if is_admin %}
+      <a href="/" class="btn btn-default pull-left">管理员后台</a>
+      {% else %}
+      <a href="/" class="btn btn-default pull-left">账务后台</a>
+      {% endif %}
+
+      {% if current_user %}
+      <a href="/logout" class="btn btn-default pull-right">登出</a>
+      {% else %}
+      <a href="/register" class="btn btn-default pull-right">注册</a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+{% endmacro %}
+
+{% macro modal_load() %}
+<div class="modal fade" id="modal_load" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    var lock = false;
+    $('#modal_load').on('hide.bs.modal', function() {
+      return !lock;
+    });
+    $(document).on('click', ".modal_load", function() {
+      if (lock) return false;
+
+      var $this = $(this);
+      var text = $this.text();
+      //$this.text('loading...');
+      lock = true;
+      $('#modal_load .modal-content').html('<h1 class="text-center alert alert-info">loading...</h1>');
+      $('#modal_load').modal('show');
+
+      $.ajax($this.attr('href'), {
+        type: $this.data('load-method') || 'GET',
+        data: $this.data('data-callback') && $this.data('data-callback')($this) || '',
+      })
+      .done(function(data) {
+        $('#modal_load .modal-content').html(data);
+      })
+      .fail(function(jxhr, data) {
+        $('#modal_load .modal-content')
+        .html('<h1 class="text-center alert alert-danger">FAIL</h1><div class="well"></div>')
+        .find('.well').text(jxhr.responseText);
+      })
+      .always(function() {
+        lock = false;
+      })
+      return false;
+    })
+  })
+</script>
+{% endmacro %}
+
+{% macro apost() %}
+<script>
+  $(function() {
+    $(document).on('click', 'a[data-method]', function() {
+      var $this = $(this);
+      if ($this.data('confirm') && !window.confirm($this.data('confirm'))) {
+        return false;
+      }
+      $('<form></form>').attr('method', $this.data('method')).attr('action', $this.attr('href')).appendTo(document.body).submit();
+      return false;
+    })
+  })
+</script>
+{% endmacro %}
+
+{% macro submit_loading() %}
+<script>
+  $(document).on('submit', 'form', function() {
+    $("button[type=submit]").button('loading');
+  })
+</script>
+{% endmacro %}
+
+{% macro input(name, label=None, type="text", value=None, placeholder=None) %}
+{% set label = label if label else name %}
+<div class="form-group">
+  <label class="control-label" for="input-{{ name }}">{{ label }}</label>
+  <input type="{{ type }}" class="form-control" name="{{ name }}" id="input-{{ name }}"
+  placeholder="{% if placeholder %}{{ placeholder }}{% else %}请输入 {{ label }}{% endif %}"
+  {% if value is not none %}value="{{ value }}"{% endif %}>
+  {% if p %}<p class="help-block">{{ p }}</p>{% endif %}
+</div>
+{% endmacro %}
+
+{% macro tplname(tpl) %}
+{% if tpl.note %}
+<span data-toggle="popover" title="{{ tpl.siteurl }}" data-content="{{ tpl.note }}">{{ tpl.sitename or "未命名" }}</span>
+{% else %}
+<span data-toggle="popover" data-content="{{ tpl.siteurl }}">{{ tpl.sitename or "未命名" }}</span>
+{% endif %}
+{% endmacro %}
+
+{% macro username(user) %}
+{% if user.email %}
+<span data-toggle="popover" data-content="{{ user.email }}">{{ user.nickname or '无名氏' }}</span> {{ '\u2714\ufe0e' if user.email_verified }}
+{% else %}
+<span>{{ user.nickname or '无名氏' }}</span> {{ '\u2714\ufe0e' if user.email_varified }}
+{% endif %}
+{% endmacro %}
+
+{% macro task_new_scripts() %}
+{% endmacro %}
+
+
+{% macro pagination_widget(pagination, endpoint, fragment='') %}
+<div class="pagination">
+    <ul class="pagination">
+    <li{% if not pagination.has_prev %} class="disabled"{% endif %}>
+        {% if pagination.has_prev %}
+        <a  href="javascript:void(0);" onclick="gotoPage('{{ pagination.prev_num }}')">&laquo;</a>
+        {% else %}
+        <a  href="#">&laquo;</a>
+        {% endif %}
+    </li>
+    {% for p in pagination.iter_pages() %}
+        {% if p %}
+            {% if p == pagination.page %}
+            <li class="active">
+                <a href="javascript:void(0);" onclick="gotoPage('{{ p }}')">{{ p }}</a>
+            </li>
+            {% else %}
+            <li>
+                <a href="javascript:void(0);" onclick="gotoPage('{{ p }}')">{{ p }}</a>
+            </li>
+            {% endif %}
+        {% else %}
+        <li class="disabled"><a href="#">&hellip;</a></li>
+        {% endif %}
+    {% endfor %}
+    <li{% if not pagination.has_next %} class="disabled"{% endif %}>
+        {% if pagination.has_next %}
+        <a  href="javascript:void(0);" onclick="gotoPage('{{ pagination.next_num }}')">&raquo;</a>
+        {% else %}
+        <a  href="#">&raquo;</a>
+        {% endif %}
+    </li>
+</ul>
+<script src="/static/js/URI.min.js"></script>
+<script>
+function gotoPage(page) {
+	var uri = new URI();
+	uri.setSearch("page", page);
+	location.href = uri.toString();
+}
+</script>
+</div>
+{% endmacro %}

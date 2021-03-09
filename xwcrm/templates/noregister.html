@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}注册提示-XWCRM系统{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link href="{{ static_url('css/register.css') }}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h2>
+		<img src="{{ static_url('img/hyrobot200.png') }}" height="40" width="40" />
+		XWCRM系统 － 账务后台<sup></sup>
+	</h2>
+    <div>
+        <p>注册提示</p>
+        <p>您好, 注册通道暂时关闭, 请耐心等待！</p>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-right" style="text-align: center;">
+      <p><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+      <button type="button" class="btn btn-default" onclick="location.href='/register'">继续等待注册</button>
+      <button type="button" class="btn btn-default" onclick="location.href='/register'">联系管理员</button>
+    </div>
+</div>
+{{ utils.submit_loading() }}
+{% endblock %}
